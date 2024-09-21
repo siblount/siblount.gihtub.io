@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solomon Blount Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5e6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .content-wrapper {
+            display: flex;
+            max-width: 1700px;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 20%;
+            max-width: 400px;
+            min-width: min-content;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .main-content {
+            width: 60%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+        }
+        .card h2 {
+            color: #ff6600;
+        }
+        .project-subcard {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .profile-image {
+            width: 100%;
+            height: auto;
+        }
+        .project-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .project-tags {
+            margin: 10px 0;
+        }
+        .project-tags span {
+            background-color: #ffcc99;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 5px;
+            font-size: 0.9em;
+        }
+        .profile-title {
+            font-size: 0.8em;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 5;
+        }
+        .my-name {
+            font-size: 1.5em;
+            text-align: center;
+            color: #ff6600;
+            margin-bottom: 0;
+        }
+        .center-h2 {
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        a span {
+            text-decoration: underline;
+            color: blue;
+        }
+        a i {
+            color: inherit;
+        }
+        @media (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+            .sidebar, .main-content {
+                width: 100%;
+            }
+        }
+        .job-details {
+            display: flex;
+            align-items: center;
+        }
+
+        .job-info {
+            margin-left: 20px;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .company-logo {
+            width: 75px;
+            height: auto;
+            border-radius: 8px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .job-title,
+        .job-date,
+        .job-location {
+            margin: 0;
+        }
+        .job-description-list li {
+            margin-bottom: 5px; /* Adjust the value as needed */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Solomon Blount Portfolio</h1>
+    </header>
+    <div class="content-wrapper">
+        <div class="sidebar">
+            <div class="card">
+                <img src="images/SolomonBlount_GithubProfilePic.png" class="profile-image">
+                <h1 class="my-name">Solomon Blount</h1>
+                <p class="profile-title">Aspiring Software Engineer</p>
+                <a href="telephone:+9108130489"><i class="fas fa-phone"></i> <span>(910) 813-0489</span></a><br/>
+                <a href="https://www.linkedin.com/in/siblount/"><i class="fab fa-linkedin"></i> <span>My LinkedIn</span></a><br/>
+                <a href="mailto:siblount@startmail.com"><i class="fas fa-envelope"></i> <span>siblount@startmail.com</span></a>
+                <h2 class="center-h2">About Me</h2>
+                <p>Hola! I'm Solomon Blount, a 21-year-old senior at North Carolina A&T State University.</p>
+                <p>I am passionate about bringing unique changes to society.</p>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="card">
+                <h2>Experience</h2>
+                <div class="project-subcard">
+                    <div class="job-details">
+                        <img src="images/google.png" alt="Project 1" class="company-logo">
+                        <div class="job-info">
+                            <h3 class="job-title">Google | Software Engineering Intern</h3>
+                            <p class="job-date">May 2024 - Aug 2024</p>
+                            <p class="job-location">Durham, NC | Hybrid</p>
+                            <ul class="job-description-list">
+                                <li><b>Developed</b> a modular interactive Python shell</li>
+                                <li><b>Enabled</b> engineers to programmatically create and manage android virtual machine sessions.</li>
+                                <li><b>Streamlined</b> development workflows and <b>enhanced</b> productivity through automated setup and configurable options for Google Meet engineers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-subcard">
+                    <div class="job-details">
+                        <img src="images/google.png" alt="Project 1" class="company-logo">
+                        <div class="job-info">
+                            <h3 class="job-title">Google | Software Engineering Intern</h3>
+                            <p class="job-date">May 2023 - Aug 2023</p>
+                            <p class="job-location">Remote</p>
+                            <ul class="job-description-list">
+                                <li><b>Designed and built</b> a critical internal CLI command that <b>automates</b> the detection of non-determinism in gRPC and Stubby calls.</li>
+                                <li><b>Covered</b> approximately 95% of the codebase, <b>significantly improving</b> code reliability.</li>
+                            </ul>
+                        </div>
+                    </div>                
+                </div>
+                <div class="project-subcard">
+                    <div class="job-details">
+                        <img src="images/google.png" alt="Project 1" class="company-logo">
+                        <div class="job-info">
+                            <h3 class="job-title">Google | STEP Intern</h3>
+                            <p class="job-date">May 2022 - Aug 2022</p>
+                            <p class="job-location">Remote</p>
+                            <ul class="job-description-list">
+                                <li><b>Created</b> a CRUD API inside the Google Maps API using Golang.</li>
+                                <li><b>Improved</b> customer experience through enhanced API functionality.</li>
+                            </ul>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+            <div class="card">
+                <h2>Projects</h2>
+                <div class="project-subcard">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/9MhyBLJ3-Vw?si=RWG7wu2h-_nHSfUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h3>My3Ball: Three Point Contest</h3>
+                    <div class="project-tags">
+                        <span><b>Gaming</b></span>
+                        <span><b>Best Works</b></span>
+                        <span><b>GitHub</b></span>
+                    </div>
+                    <p><b>Developed</b> a VR three-point contest basketball game in Unity independently.</p>
+                </div>
+                <div class="project-subcard">
+                    <h3>Moon Warden</h3>
+                    <div class="project-tags">
+                        <span><b>Gaming</b></span>
+                        <span><b>Awards</b></span>
+                        <span><b>School Project</b></span>
+                    </div>
+                    <p><b>Programmed</b> player and enemy interactions, collision events, UI functionality, and scene navigation.</p>
+                    <p><b>Designed</b> the main menu, help menu, and pause menu.</p>
+                </div>
+                <div class="project-subcard">
+                    <!-- <img src="images/JzSense1028x1200.jpg" alt="JzSense Thumbnail Image" class="project-image"> -->
+                    <h3>JzSense</h3>
+                    <div class="project-tags">
+                        <span><b>GitHub</b></span>
+                        <span><b>Marketplace</b></span>
+                    </div>
+                    <p><b>Created</b> a web scraper using Python to convert documentation from DAZ website to a documented JavaScript file to enable IntelliSense.</p>
+                    <p><b>Developed</b> a scrapper for old documentation to a JavaScript file.</p>
+                </div>
+                <div class="project-subcard">
+                    <img src="images/reee.png" alt="Product Manager for Daz Studio Image" class="project-image">
+                    <h3>Product Manager for DAZ Studio</h3>
+                    <div class="project-tags">
+                        <span><b>GitHub</b></span>
+                    </div>
+                    <p><b>Created</b> a desktop application that automates the extraction process for DAZ Studio products for the zip, rar, and 7z archive types.</p>
+                    <p><b>Developed</b> a smart product library that holds installed products, has a search engine, and more.</p>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="card">
+                <h2>Education</h2>
+                <h3>North Carolina Agricultural & Technical State University</h3>
+                <p>Bachelor of Science in Computer Science</p>
+                <p><em>2021-2024</em></p>
+                <br>
+                <h3>Wake Technical Community College</h3>
+                <p>Certificate in Simulation & Game Development</p>
+                <p><em>2019-2021</em></p>
+            </div>
+            <div class="card">
+                <h2>Skills</h2>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
